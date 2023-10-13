@@ -7,7 +7,7 @@ resource "aws_ssm_parameter" "params" {
 variable "parameters" {
   default = [
     {name = "prod.rds.master-password", value = "expenseprod1234", type = "SecureString"},
-    {name = "prod.rds.master_username", value = "expense", type = "String"},
+    {name = "prod.rds.master_username", value = "mysqlrdsadmin", type = "String"},
     {name = "prod.expense.frontend.backend_url", value = "http://backend-prod.devopsa17.online/", type = "String"},
     {name = "prod.rds.endpoint", value = "prod-mysql.cluster-cgl0nqywutw1.us-east-1.rds.amazonaws.com", type = "String"},
 
